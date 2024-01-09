@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene background="color: #000">
+        <a-assets>
+            <img id="CV" src="/img/CVparaVR3.jpg">
+            <img id="shadow" src="/img/radial-shadow-2.png">
+            <img id="nueva" src="/img/nueva.jpg">
+        </a-assets>
+        <a-curvedimage src="#CV" radius="5" theta-length="180" height="9" rotation="0 90 0" scale="1.2 1.2 1.2"></a-curvedimage>
+        <a-curvedimage src="#nueva" radius="5" theta-length="180" height="9" rotation="0 270 0" scale="1.2 1.2 1.2" position="0 0 7"></a-curvedimage>
+        <a-image position="0 -5 0" src="#shadow" rotation="-90 0 0" scale="6 6 6"></a-image>
+        <a-entity position="0 0 4">
+            <a-camera></a-camera>
+        </a-entity>
+    </a-scene>
+</body>
+</html>
